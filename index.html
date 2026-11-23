@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>gather — prototipo</title>
+<meta name="description" content="Prototipo interactivo de Gather: tu grupo, una IA compartida, más cosas juntos.">
+<meta name="theme-color" content="#070a22">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Gather">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="stylesheet" href="fonts.css?v=41">
+<link rel="stylesheet" href="styles.css?v=41">
+<link rel="stylesheet" href="landing.css?v=41">
+<link rel="stylesheet" href="app.css?v=41">
+</head>
+<body>
+
+<!-- ============ PORTADA ============ -->
+<section id="landing" class="lp" aria-label="Gather">
+
+  <header class="lp-nav">
+    <a class="lp-logo" href="#top" aria-label="gather">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#e11d3f"/><circle cx="32" cy="17" r="7" fill="#fdf3e2"/><circle cx="17" cy="29" r="6" fill="#fdf3e2"/><circle cx="47" cy="29" r="6" fill="#fdf3e2"/><path d="M32 27c-7 0-11 4-11 9v3h22v-3c0-5-4-9-11-9z" fill="#fdf3e2"/><path d="M17 36c-5 0-8 3-8 7v2h12v-4c0-2 0-4 1-5z" fill="#fdf3e2" opacity=".85"/><path d="M47 36c5 0 8 3 8 7v2H43v-4c0-2 0-4-1-5z" fill="#fdf3e2" opacity=".85"/><path d="M32 40l2.2 4.8L39 47l-4.8 2.2L32 54l-2.2-4.8L25 47l4.8-2.2z" fill="#c8f23a"/></svg>
+      <span>gather</span>
+    </a>
+    <nav class="lp-links" aria-label="Secciones">
+      <a class="tape t1" href="#como">CÓMO FUNCIONA <i>→</i></a>
+      <a class="tape t2" href="#planes">COMERCIOS <em>NUEVO</em></a>
+      <a class="lp-plain" href="#privacidad">Privacidad</a>
+      <button class="lp-pill" data-enter><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 5.2 5.6.6-4.2 3.8 1.2 5.6L12 14.4 7 17.2l1.2-5.6L4 7.8l5.6-.6z" fill="currentColor"/></svg>Probar el prototipo</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="lp-hero" id="top">
+    <img class="sticker s1" src="assets/ia/icono-corazon.webp" alt="">
+    <img class="sticker s2" src="assets/ia/icono-torta.webp" alt="">
+    <h1 class="cond"><span>TU GRUPO.</span><span class="dim">UNA IA</span><span class="dim2">COMPARTIDA.</span></h1>
+
+    <div class="fb fb1"><small>sofi</small>mañana arranco el gym 💪</div>
+    <div class="fb fb2"><small>nico</small>eso dijiste el lunes 😂</div>
+    <div class="fb fb3"><small>lau</small>yo me sumo ¿se anotan?</div>
+    <div class="fb fb4 ai"><small>gather · IA</small>¿lo hacemos reto? 3 días, todos adentro 😏</div>
+    <div class="fb fb5 dark">ya salgo 🕘</div>
+
+    <div class="lp-stage" aria-live="polite">
+      <div class="mascot-wrap" id="hero-mascot" data-size="xl"></div>
+      <div class="lp-speech" id="hero-speech">…</div>
+      <div class="stage-dots" id="hero-dots" aria-hidden="true"></div>
+    </div>
+    <span class="lp-hint">Bajá para ver más</span>
+  </div>
+
+  <!-- TU GRUPO, TU VIBRA -->
+  <section class="lp-sec" id="como">
+    <div class="vibe">
+      <div class="vibe-card reveal">
+        <h3 class="cond" id="vibe-title">LOS DE SIEMPRE</h3>
+        <div class="mascot-wrap" id="vibe-mascot" data-size="lg"></div>
+      </div>
+      <div class="vibe-side reveal">
+        <h2 class="cond"><span>CADA GRUPO,</span><span class="dim">SU VIBRA.</span></h2>
+        <p>Un solo personaje por grupo. Se acuerda de lo que pasó, cambia de pose según el momento y ayuda a que los planes se hagan.</p>
+        <div class="vibe-list" id="vibe-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARJETAS ESTILO TIENDA -->
+  <section class="lp-sec">
+    <h2 class="cond center reveal"><span>TODO LO QUE HACE</span><span class="dim">UN BUEN GRUPO.</span></h2>
+    <div class="cards">
+
+      <article class="scard reveal">
+        <h3 class="cond"><span>¿UNA IDEA LOCA?</span><span class="dim">PÍDANSELA A GATHER.</span></h3>
+        <div class="ideas">
+          <div class="idea i1"><img class="ico" src="assets/ia/icono-calendario.webp" alt=""><b>PLAN EN COMERCIO</b><small>bowling · hoy 20:30</small></div>
+          <div class="idea i2"><img class="ico" src="assets/ia/icono-llama.webp" alt=""><b>RETO DE 3 DÍAS</b><small>gym · 2 de 3</small><span class="mbar"><u style="width:66%"></u></span></div>
+          <div class="idea i3"><img class="ico" src="assets/ia/icono-alcancia.webp" alt=""><b>DIVIDIR LA CUENTA</b><small>$182 c/u · faltan 2</small></div>
+          <div class="idea i4"><img class="ico" src="assets/ia/icono-trivia.webp" alt=""><b>TRIVIA DEL GRUPO</b><small>4 jugadores · ronda 2</small></div>
+        </div>
+        <img class="smascot" src="assets/gaming.webp" alt="" loading="lazy">
+      </article>
+
+      <article class="scard reveal">
+        <h3 class="cond"><span>UNA FOTO AL DÍA.</span><span class="dim">TODO EL GRUPO ADENTRO.</span></h3>
+        <div class="phone">
+          <div class="ph-bar"><span class="ph-back">‹ chat</span><span class="ph-name">los de siempre</span></div>
+          <div class="ph-title"><b>HOY · JUEVES</b><small>5 nov</small></div>
+          <div class="ph-photo" style="background-image:url(assets/ia/perfil-sofi.webp)"><em>6:00 AM</em><s>sofi</s></div>
+          <div class="ph-photo" style="background-image:url(assets/ia/perfil-mati.webp)"><em>3:47 p.m.</em><s>mati</s></div>
+          <div class="ph-photo" style="background-image:url(assets/ia/perfil-lau.webp)"><em>2:33 p.m.</em><s>lau</s></div>
+          <div class="ph-tabs"><span class="on">HOY</span><span>CHAT</span><span>MEDIA</span></div>
+        </div>
+        <img class="smascot sm2" src="assets/celular.webp" alt="" loading="lazy">
+      </article>
+
+      <article class="scard reveal">
+        <h3 class="cond"><span>CREA RETOS Y JUEGOS.</span><span class="dim">NADA QUE DESCARGAR.</span></h3>
+        <div class="phone">
+          <div class="ph-bar"><span class="ph-back">‹ 3</span><span class="ph-name">los de siempre</span></div>
+          <div class="streak">
+            <div><b>3 DÍAS DE GYM</b><span class="pill">2/3 · 0:00</span></div>
+            <div class="flame"><img class="ico" src="assets/ia/icono-llama.webp" alt=""><small>RACHA DEL GRUPO</small><b>11</b></div>
+            <div class="ph-faces"><img src="assets/ia/perfil-sofi.webp" alt=""><img src="assets/ia/perfil-lau.webp" alt=""><img src="assets/ia/perfil-nico.webp" alt=""><span>tú</span></div>
+          </div>
+          <div class="ph-msg"><img src="assets/ia/perfil-caro.webp" alt=""><p>¿3 días de gym? ¿quién se suma? 💪</p></div>
+          <div class="ph-msg ai"><p>¡Ya van 2! No me hagan esto 😏</p></div>
+          <div class="ph-tabs"><span>HOY</span><span class="on">CHAT</span><span>MEDIA</span></div>
+        </div>
+        <img class="smascot sm3" src="assets/recompensa.webp" alt="" loading="lazy">
+      </article>
+
+      <article class="scard reveal" id="planes">
+        <h3 class="cond"><span>PLANES EN COMERCIOS.</span><span class="dim">CON BENEFICIO PARA TODOS.</span></h3>
+        <div class="phone">
+          <div class="ph-bar"><span class="ph-back">‹ chat</span><span class="ph-name">los de siempre</span></div>
+          <div class="ph-plan" style="background-image:linear-gradient(transparent 35%,rgba(0,0,0,.65)),url(assets/ia/comercio-c1-bowling.webp)"><span class="tag">⭐ 2 pistas al precio de 1</span><b>STRIKE BOWLING</b><small>hoy · 20:30 · comercio ficticio</small></div>
+          <div class="ph-votes"><span class="v on">🎳 Bowling <u>3</u></span><span class="v">🍕 Pizza <u>1</u></span><span class="v">🎤 Karaoke <u>1</u></span></div>
+          <div class="ph-cta">ME SUMO</div>
+          <div class="ph-tabs"><span>HOY</span><span class="on">CHAT</span><span>MEDIA</span></div>
+        </div>
+        <img class="smascot sm4" src="assets/aventura.webp" alt="" loading="lazy">
+      </article>
+
+      <article class="scard reveal" id="privacidad">
+        <h3 class="cond"><span>VOS MANDÁS.</span><span class="dim">GATHER PROPONE.</span></h3>
+        <div class="phone">
+          <div class="ph-bar"><span class="ph-back">‹ ajustes</span><span class="ph-name">gather</span></div>
+          <div class="ph-title"><b>CUÁNDO HABLA</b><small>vos elegís</small></div>
+          <div class="ph-seg"><span>callado</span><span class="on">normal</span><span>charlatán</span></div>
+          <div class="ph-title"><b>TONO</b></div>
+          <div class="ph-seg"><span>tranquilo</span><span class="on">juguetón</span><span>pícaro</span></div>
+          <div class="ph-row"><span>Silenciar a Gather</span><i></i></div>
+          <div class="ph-row"><span>Qué recuerda</span><u>borrar</u></div>
+          <div class="ph-tabs"><span>HOY</span><span>CHAT</span><span class="on">MEDIA</span></div>
+        </div>
+        <img class="smascot sm5" src="assets/sorpresa.webp" alt="" loading="lazy">
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PRINCIPIOS -->
+  <section class="lp-sec">
+    <h2 class="cond center reveal"><span>EN QUÉ</span><span class="dim">CREEMOS.</span></h2>
+    <div class="vals">
+      <div class="val reveal"><b>01</b><h4>PROPONE, NO DECIDE.</h4><p>Gather sugiere y el grupo elige. Nada se reserva ni se paga sin que una persona lo confirme.</p></div>
+      <div class="val reveal"><b>02</b><h4>HUMOR PARA TODOS.</h4><p>Bromas suaves, de a ratos pícaras, que funcionan para amigos de distintas edades.</p></div>
+      <div class="val reveal"><b>03</b><h4>POCOS ESPACIOS.</h4><p>Retos y planes tienen estado y un lugar claro. No se crea una sala nueva por cada idea.</p></div>
+      <div class="val reveal"><b>04</b><h4>VOS CONTROLÁS.</h4><p>Frecuencia, tono, silencio, qué puede usar la IA y qué recuerda.</p></div>
+      <div class="val reveal"><b>05</b><h4>COMERCIOS DE VERDAD.</h4><p>Los planes pueden traer beneficios de locales. Siempre con las condiciones a la vista.</p></div>
+      <div class="val reveal"><b>06</b><h4>MENOS PANTALLA.</h4><p>Gather gana cuando el plan se hace, no cuando se mira el celular.</p></div>
+    </div>
+  </section>
+
+  <!-- CIERRE -->
+  <section class="lp-sec">
+    <div class="finale reveal">
+      <h2 class="cond"><span>ENTRÁ AL</span><span class="dim">PROTOTIPO.</span></h2>
+      <p>Probá el chat, el juego, los planes en comercios y los ajustes. Todo es una demostración con datos ficticios.</p>
+      <button class="lp-pill big" data-enter>Entrar ahora</button>
+    </div>
+  </section>
+
+  <footer class="lp-foot">
+    <span>gather · nombre provisional (antes PINTA)</span>
+    <span>Personas, comercios y beneficios de este prototipo son ficticios.</span>
+  </footer>
+</section>
+
+<!-- ============ APP ============ -->
+<div id="app" class="app" hidden>
+  <aside class="side" aria-label="Navegación">
+    <div class="logo logo-sm"><svg viewBox="0 0 64 64" class="logo-mark" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#e11d3f"/><circle cx="32" cy="17" r="7" fill="#fdf3e2"/><circle cx="17" cy="29" r="6" fill="#fdf3e2"/><circle cx="47" cy="29" r="6" fill="#fdf3e2"/><path d="M32 27c-7 0-11 4-11 9v3h22v-3c0-5-4-9-11-9z" fill="#fdf3e2"/><path d="M32 40l2.2 4.8L39 47l-4.8 2.2L32 54l-2.2-4.8L25 47l4.8-2.2z" fill="#c8f23a"/></svg><span class="logo-word">gather</span></div>
+    <nav class="nav" id="nav"></nav>
+    <button class="nav-gear" id="open-settings" aria-label="Ajustes de Gather">⚙️ <span>Ajustes de Gather</span></button>
+    <button class="nav-back" id="back-landing">← Volver a la portada</button>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="back-pill" id="back-landing-2" aria-label="Volver a la portada">‹</button>
+      <div class="group-pill"><span class="stack" id="top-stack"></span><div class="gp-text"><b id="top-name">los de siempre</b><small id="top-sub">Hoy</small></div></div>
+      <div class="top-actions"><span class="status-pill" id="status-pill"></span><button class="icon-btn guide-btn" id="open-guide" aria-label="Cómo se usa">?</button><button class="icon-btn" id="open-settings-2" aria-label="Ajustes de Gather">⚙️</button></div>
+    </header>
+    <div id="view" class="view" tabindex="-1"></div>
+  </main>
+
+  <nav class="tabbar" id="tabbar" aria-label="Secciones"></nav>
+</div>
+
+<!-- ============ MODAL / TOAST ============ -->
+<dialog id="modal" class="modal"><div id="modal-body"></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js?v=41"></script>
+</body>
+</html>
